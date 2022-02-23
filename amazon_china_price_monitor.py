@@ -16,9 +16,14 @@ from user_agent import generate_user_agent
 import func
 from wechatsender import WeChatSender
 
-corpid = '企业微信-企业ID'
-corpsecret = '企业微信-应用管理-Secret'
-agentid = '企业微信-应用管理-AgentId'
+# corpid = '企业微信-企业ID'
+# corpsecret = '企业微信-应用管理-Secret'
+# agentid = '企业微信-应用管理-AgentId'
+
+
+corpid = 'ww1138f50c28e38452'
+corpsecret = 'iCXiWY9OGQl1sQAwYEI0AqeuvjFkrbSL1FGWedzPglQ'
+agentid = '1000002'
 
 
 def shrink_price(str_price):
@@ -31,7 +36,7 @@ def shrink_price(str_price):
 def monitor_amazon_china():
     # 需要监测的目标商品 URL 等信息。
     monitor_targets = [
-        {'url': 'https://www.amazon.cn/dp/B07G364YHX', 'ideal_price': 1000.00, 'lowst_price_history': 0.00,
+        {'url': 'https://www.amazon.cn/dp/B07G364YHX', 'ideal_price': 1200.00, 'lowst_price_history': 0.00,
          'keyword': '10TB', 'last_notify_date': ''}]
 
     session = requests.session()
